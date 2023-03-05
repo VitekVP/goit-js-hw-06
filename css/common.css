@@ -48,3 +48,16 @@ img {
 
 	overflow: hidden;
 }
+
+.decor-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.decor-list-item {
+	border: 1px solid;
+	border-radius: 4px;
+}

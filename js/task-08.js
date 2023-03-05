@@ -13,8 +13,16 @@ const handleSubmitForm = event => {
 		return;
 	}
 
-	console.log(`Login: ${email.value}`);
-	console.log(`Password: ${password.value}`);
+	const inputData = {};
+	const log = email.name;
+	const pass = password.name;
+	inputData[log] = email.value;
+	inputData[pass] = password.value;
+
+	console.log(inputData);
+
+	// console.log(`Login: ${email.value}`);
+	// console.log(`Password: ${password.value}`);
 
 	event.target.reset();
 };
